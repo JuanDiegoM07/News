@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21D62" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="HitsCD" representedClassName="HitsCD" syncable="YES" codeGenerationType="class">
+        <attribute name="query" optional="YES" attributeType="String"/>
+        <relationship name="hits" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NewsCD"/>
+    </entity>
+    <entity name="NewsCD" representedClassName="NewsCD" syncable="YES" codeGenerationType="class">
+        <attribute name="author" optional="YES" attributeType="String"/>
+        <attribute name="comment_text" optional="YES" attributeType="String"/>
+        <attribute name="created_at" optional="YES" attributeType="String"/>
+        <attribute name="created_at_i" optional="YES" attributeType="String"/>
+        <attribute name="parent_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="story_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="story_title" optional="YES" attributeType="String"/>
+        <attribute name="story_url" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="HitsCD" positionX="-54" positionY="0" width="128" height="59"/>
+        <element name="NewsCD" positionX="-63" positionY="-18" width="128" height="149"/>
+    </elements>
+</model>

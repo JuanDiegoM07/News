@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="95" id="HxY-F8-L3i" customClass="NewsTableViewCell" customModule="News" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="352" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HxY-F8-L3i" id="Qdm-A2-xhj">
+                <rect key="frame" x="0.0" y="0.0" width="352" height="95"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKQ-wk-het">
+                        <rect key="frame" x="10" y="10" width="37.5" height="17"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkR-Wr-l6S">
+                        <rect key="frame" x="10" y="37" width="29.5" height="14"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OGc-WE-91W">
+                        <rect key="frame" x="30" y="61" width="29.5" height="14"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lkR-Wr-l6S" firstAttribute="top" secondItem="uKQ-wk-het" secondAttribute="bottom" constant="10" id="42j-yF-s2H"/>
+                    <constraint firstItem="lkR-Wr-l6S" firstAttribute="leading" secondItem="Qdm-A2-xhj" secondAttribute="leading" constant="10" id="5c9-Jz-tXK"/>
+                    <constraint firstItem="uKQ-wk-het" firstAttribute="leading" secondItem="Qdm-A2-xhj" secondAttribute="leading" constant="10" id="5ka-BG-DDc"/>
+                    <constraint firstItem="OGc-WE-91W" firstAttribute="leading" secondItem="Qdm-A2-xhj" secondAttribute="leadingMargin" constant="10" id="O0H-5X-hdI"/>
+                    <constraint firstItem="OGc-WE-91W" firstAttribute="top" secondItem="lkR-Wr-l6S" secondAttribute="bottom" constant="10" id="tF6-8I-d5r"/>
+                    <constraint firstItem="uKQ-wk-het" firstAttribute="top" secondItem="Qdm-A2-xhj" secondAttribute="top" constant="10" id="zbh-3j-q5k"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="WU7-wr-Y1x"/>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="authorLabel" destination="uKQ-wk-het" id="dG2-g6-kUe"/>
+                <outlet property="storyTitleLable" destination="lkR-Wr-l6S" id="0AV-cx-Sai"/>
+                <outlet property="storyUrlLabel" destination="OGc-WE-91W" id="pCt-OC-vR2"/>
+            </connections>
+            <point key="canvasLocation" x="298.55072463768118" y="126.89732142857142"/>
+        </tableViewCell>
+    </objects>
+</document>
